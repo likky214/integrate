@@ -15,7 +15,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+    <repository>
+         <id>spring_release</id>
+         <name>spring_release</name>
+         <url>http://192.168.79.129:8081/nexus/content/repositories/spring_release/</url>
+    </repository>
+    <snapshotRepository>
+         <id>spring_snapshot</id>
+         <name>spring_snapshot</name>
+         <url>http://192.168.79.129:8081/nexus/content/repositories/spring_release/</url>
+    </snapshotRepository>
+</distributionManagement>
+  
   <build>
     <finalName>integrate</finalName>
   </build>
+  
 </project>
